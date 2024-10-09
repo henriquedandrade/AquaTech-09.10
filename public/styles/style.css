@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+}
+
+:root{
+    --tamanho-header: 80px;
+    --tamanho-footer: 65px;
+    --tamanho-banner: calc(50vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+}
+
+.header{
+    height: var(--tamanho-header);
+    border-bottom: 6px solid #32b9cd;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.header .container{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.agora{
+    font-weight: 800;   
+}
+
+.navbar{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffffff;
+}
+
+.titulo{
+    color: #32b9cd;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.banner {
+    height: var(--tamanho-banner);
+    color: white;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+}
+
+.banner .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.banner .container p {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+
+.banner .container span{
+    font-weight: 800;
+}
+
+.social{
+    background-color:  rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.social .container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.social .container .boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 30px 0;
+    height: auto;
+    flex-direction: column;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.box p{
+    text-align: center;
+    margin-right: 20px;
+}
+
+.box img{
+    width: 170px;
+}
+.logo_text{
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #32b9cd;
+    height:calc(var(--tamanho-footer) + 100px) ;
+    color: white;
+    display: flex;
+    font-size: 15px;
+}
+
+.footer .container{
+    justify-content: right;
+    align-items: center;
+    width: auto;
+}
+
+.version {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* Pagina de login */
+
+.login {
+    height: var(--tamanho-banner);
+    color: white;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .container{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding: 20px 50px;
+    color: #ed135c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.campo {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.formulario .botao{
+    background-color: #ed135c;
+    border: 0px;
+    border-radius: 5px;
+    width: 100px;
+    height: 27px;
+    color: white;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+input{
+    height: 30px;
+    border-radius: 5px;
+    border: #32b9cd 2px solid;
+    text-align: center;
+}
+.card{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.campo span{
+    font-weight: 700;
+}
